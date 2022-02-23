@@ -156,7 +156,7 @@ span{
   }
   @media screen and (max-width: 348px){
     .ham-burger-menu{
-        position: fixed;
+       position: fixed;
 
     }
   }
