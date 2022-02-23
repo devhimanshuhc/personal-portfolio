@@ -17,20 +17,11 @@ export default function ServiceSection(props) {
         >
           <ServiceCard
             image={design}
-            title={"Web Design"}
+            title={"Web Development"}
             paragraph={
-              "I like to code things from scratch, and enjoy bringing ideas to life in the browser."
+              "I like to code things from scratch, and enjoy bringing ideas to life in the browser with React Js. I know some CCS frameworks like Bootstrap too."
             }
           />
-          <div className="mid-card">
-            <ServiceCard
-              image={intelligence}
-              title={"AI"}
-              paragraph={
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-              }
-            />
-          </div>
         </div>
       </ServiceSectionStyled>
     </InnerLayout>
@@ -42,7 +33,7 @@ const ServiceSectionStyled = styled.section`
     margin-top: 5rem;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem;
 
     @media screen and (max-width: 1000px) {

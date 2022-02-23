@@ -1,27 +1,25 @@
-import css1 from "../img/portImages/cv_css.png";
-import css2 from "../img/portImages/ms.png";
-import react1 from "../img/portImages/react_styled.png";
-import img2 from "../img/portImages/maya-4.jpg";
+import img1 from "../img/portImages/news.png";
+import img2 from "../img/portImages/resp.png";
 import img3 from "../img/portImages/maya-3.jpg";
 
 const portfolios = [
   {
     id: 1,
-    category: "CSS",
-    image: css1,
-    link1: "https://www.google.com",
-    link2: "https://www.google.com",
-    title: "Responsive Resume",
-    text: "Created with only HTML and CSS.",
+    category: "NewsNet",
+    image: img1,
+    link1: "https://github.com/devhimanshuhc/newsApp",
+    link2: "https://newsnet.vercel.app/",
+    title: "NewsNet",
+    text: "It is a responsive news web app where you can get daily news doses.",
   },
   {
     id: 2,
-    category: "Python",
-    image: img3,
-    link1: "https://www.google.com",
-    link2: "https://www.google.com",
-    title: "How To Animate In Maya",
-    text: "Number one Animation Application",
+    category: "Javascript",
+    image: img2,
+    link1: "https://github.com/devhimanshuhc/responsive-website",
+    link2: "https://responsiveweb.vercel.app/",
+    title: "Responsive website",
+    text: "This is a responsive site creted HTML, CSS and Javascript",
   },
   {
     id: 3,
@@ -31,34 +29,6 @@ const portfolios = [
     link2: "https://www.google.com",
     title: "How To Animate In Maya",
     text: "Number one Animation Application",
-  },
-  {
-    id: 4,
-    category: "Animation",
-    image: img2,
-    link1: "https://www.google.com",
-    link2: "https://www.google.com",
-    title: "How To Use Blender",
-    text: "Free Animation Software",
-  },
-
-  {
-    id: 5,
-    category: "React JS",
-    image: react1,
-    link1: "https://www.google.com",
-    link2: "https://www.google.com",
-    title: "Responsive Portfolio Website",
-    text: "Created using different technologies such as Material UI, Styled-Components and more...",
-  },
-  {
-    id: 6,
-    category: "CSS",
-    image: css2,
-    link1: "https://www.google.com",
-    link2: "https://www.google.com",
-    title: "Microsoft Website Clone",
-    text: "Created using HTML and CSS",
   },
 ];
 

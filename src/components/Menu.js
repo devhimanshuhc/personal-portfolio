@@ -1,6 +1,6 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LanguageIcon from '@mui/icons-material/Language';
+import LanguageIcon from "@mui/icons-material/Language";
 import styled from "styled-components";
 
 export default function Menu({ menuItem }) {
@@ -36,6 +36,7 @@ export default function Menu({ menuItem }) {
 }
 
 const MenuStyled = styled.div`
+margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;

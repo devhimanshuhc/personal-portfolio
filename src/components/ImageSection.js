@@ -12,22 +12,23 @@ export default function ImageSection() {
 
         <p className="paragraph">
           I’m a freelance Front-end Developer creating successful websites with
-          React JS.
-          I'm a self-taught developer with a passion for computer science and
-          programming. In the past, I started with HTML5 & CSS and learned
-          JavaScript and I've worked extensively in the Web Development space as
-          a freelancer.
+          React JS. I'm a self-taught developer with a passion for computer
+          science and programming. In the past, I started with HTML5 & CSS and
+          learned JavaScript and I've worked extensively in the Web Development
+          space as a freelancer.
         </p>
         <div className="about-info">
           <div className="info-title">
             <p>Name</p>
             <p>Location</p>
             <p>Service</p>
+            <p>Hobbies</p>
           </div>
           <div className="info">
             <p>: Himanshu Chauhan</p>
             <p>: India</p>
             <p>: Web Developer</p>
+            <p>: Writing, Photography, Ediiting</p>
           </div>
         </div>
 

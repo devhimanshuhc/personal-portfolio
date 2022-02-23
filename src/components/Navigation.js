@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-
 export default function Navigation() {
   return (
     <NavigationSyled>
@@ -61,16 +60,14 @@ const NavigationSyled = styled.nav`
   height: 100%;
   width: 100%;
   border-right: 1px solid var(--border-color);
-  
+
   .nav-items {
     width: 100%;
     height: 100vh;
     text-align: center;
     margin: 75% 0;
-    
+
     width: 100%;
-    
-    
 
     .active-class {
       background-color: var(--primary-color);

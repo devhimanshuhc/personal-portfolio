@@ -20,8 +20,8 @@ const ProgressBarStyled = styled.div`
     display: flex;
     align-items: center;
 
-    p{
-        padding-right: 1.1rem;
+    p {
+      padding-right: 1.1rem;
     }
 
     .progress {

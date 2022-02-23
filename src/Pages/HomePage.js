@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import Particle from "../components/Particles";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 export default function HomePage() {
+  
+  TabTitle("Home-Himanshu Chauhan");
   return (
     <HomePageStyled>
-      <div className="p-particles=js">
-        <Particle />
-      </div>
+      
       <div className="typography">
         <h1>
           Hi I'm <span>Himanshu Chauhan</span>
         </h1>
-        <p>
-          I design and build user interfaces 
-        </p>
+        <p>I design and build user interfaces with HTML/CSS, Javascript and React JS</p>
         <div className="icons">
           <a
             href="https://instagram.com/hiimanshuh"
@@ -42,11 +40,7 @@ const HomePageStyled = styled.header`
   height: 100vh;
   position: relative;
 
-  .p-particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  
 
   .typography {
     position: absolute;

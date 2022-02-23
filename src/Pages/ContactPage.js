@@ -7,9 +7,11 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactItems from "../components/ContactItems";
+import { TabTitle } from "../utils/GeneralFunctions";
+
 
 export default function ContactPage(props) {
-
+  TabTitle("Contact-Himanshu Chauhan");
   const call = <CallIcon />;
   const email = <EmailIcon />;
   const location = <LocationOnIcon />;

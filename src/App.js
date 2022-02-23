@@ -1,5 +1,6 @@
 import Sidebar from "./components/Sidebar";
 import styled from "styled-components";
+import Particle from "../src/components/Particles";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import PortfoliosPage from "./Pages/PortfoliosPage";
@@ -32,6 +33,9 @@ function App() {
 
   return (
     <>
+      <div className="p-particles=js">
+        <Particle />
+      </div>
       <div className="App">
         <Sidebar navToggle={navToggle} />
         <div className="theme">
@@ -89,6 +93,11 @@ const MainContentStyled = styled.main`
 
   @media screen and (max-width: 1200px) {
     margin-left: 0;
+  }
+  .p-particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .lines {

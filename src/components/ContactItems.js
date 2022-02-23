@@ -6,13 +6,16 @@ export default function ContactItems({ icon, title, contact }, props) {
     <ContactItemsStyled>
       <div className="left-content">{icon}</div>
       <div className="right-content">
-        <h6 style={{color: props.theme === "light-theme" ? "" : "white"}}>{title}</h6>
+        <h6 style={{ color: props.theme === "light-theme" ? "" : "white" }}>
+          {title}
+        </h6>
         <p>{contact}</p>
       </div>
     </ContactItemsStyled>
   );
 }
 const ContactItemsStyled = styled.div`
+  margin-top: 2rem;
   padding: 1rem 2rem;
   background-color: var(--background-dark-grey);
   display: flex;
