@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Title from "../components/Title";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
-import portfolios from "../data/portfolios";
 import Menu from "../components/Menu";
 
-
 export default function PortfoliosPage() {
-
-
   return (
     <div>
       <MainLayout>

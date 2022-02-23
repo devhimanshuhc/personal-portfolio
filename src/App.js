@@ -1,5 +1,4 @@
 import Sidebar from "./components/Sidebar";
-import IconButton from "./components/IconButton";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
