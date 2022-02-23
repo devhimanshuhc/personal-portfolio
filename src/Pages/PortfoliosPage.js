@@ -4,9 +4,8 @@ import { MainLayout, InnerLayout } from "../styles/Layouts";
 import portfolios from "../data/portfolios";
 import Menu from "../components/Menu";
 
-
 export default function PortfoliosPage() {
-  const [menuItem, setMenuItem] = useState(portfolios);
+  const [menuItem] = useState(portfolios);
 
   return (
     <div>
