@@ -4,7 +4,6 @@ import { InnerLayout } from "../styles/Layouts";
 import Title from "../components/Title";
 import ServiceCard from "./ServiceCard";
 import design from "../img/design.svg";
-import intelligence from "../img/intelligence.svg";
 
 export default function ServiceSection(props) {
   return (
