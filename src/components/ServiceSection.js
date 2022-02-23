@@ -5,14 +5,16 @@ import Title from "../components/Title";
 import ServiceCard from "./ServiceCard";
 import design from "../img/design.svg";
 import intelligence from "../img/intelligence.svg";
-import gamedev from "../img/game-dev.svg";
 
 export default function ServiceSection(props) {
   return (
     <InnerLayout>
       <ServiceSectionStyled>
         <Title title={"Services"} span={"Services"} />
-        <div className="services" style={{color: props.theme === "light-theme" ? "" : "#a3a3a3"}}>
+        <div
+          className="services"
+          style={{ color: props.theme === "light-theme" ? "" : "#a3a3a3" }}
+        >
           <ServiceCard
             image={design}
             title={"Web Design"}
@@ -29,7 +31,6 @@ export default function ServiceSection(props) {
               }
             />
           </div>
-         
         </div>
       </ServiceSectionStyled>
     </InnerLayout>
@@ -39,11 +40,11 @@ export default function ServiceSection(props) {
 const ServiceSectionStyled = styled.section`
   .services {
     margin-top: 5rem;
-    
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
-    
+
     @media screen and (max-width: 1000px) {
       flex-direction: column;
     }

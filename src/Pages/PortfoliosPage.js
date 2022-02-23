@@ -6,14 +6,14 @@ import Menu from "../components/Menu";
 
 
 export default function PortfoliosPage() {
-  const [menuItem, setMenuItem] = useState(portfolios);
+
 
   return (
     <div>
       <MainLayout>
         <Title title={"Portfolios"} span={"Portfolios"} />
         <InnerLayout>
-          <Menu menuItem={menuItem} />
+          <Menu />
         </InnerLayout>
       </MainLayout>
     </div>
