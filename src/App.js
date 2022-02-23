@@ -50,7 +50,6 @@ function App() {
               <Switch
                 value=""
                 checked={checked}
-                // onChange={}
                 size="medium"
                 inputProps={{ "aria-label": "" }}
                 onClick={themeToggler}
