@@ -134,6 +134,9 @@ span{
       right: 5%;
       top: 4%;
       z-index: 15;
+      background-color: transparent;
+      border: none;
+      color: #fff;
       display: none;
       
       

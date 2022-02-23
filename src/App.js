@@ -62,9 +62,9 @@ function App() {
           </div>
         </div>
 
-        <div className="ham-burger-menu">
+        <button type="button" className="ham-burger-menu">
           <MenuIcon onClick={() => setNavToggle(!navToggle)} />
-        </div>
+        </button>
 
         <MainContentStyled>
           <div className="lines">
