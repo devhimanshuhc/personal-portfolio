@@ -6,6 +6,7 @@ import AboutPage from "./Pages/AboutPage";
 import PortfoliosPage from "./Pages/PortfoliosPage";
 import ContactPage from "./Pages/ContactPage";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
+import MenuIcon from '@mui/icons-material/Menu';
 import { Routes, Route } from "react-router-dom";
 import { Switch } from "@mui/material";
 import { useState } from "react";
@@ -62,36 +63,10 @@ function App() {
           </div>
         </div>
 
-        {/* <div className="ham-burger-menu">
+        <div className="ham-burger-menu">
           <MenuIcon onClick={() => setNavToggle(!navToggle)} />
-        </div> */}
-        <div
-        typeof="button"
-          className={"ham-burger-menu"}
-          onClick={() => {
-            setNavToggle(!navToggle);
-            setMenuOpen(!menuOpen);
-          }}
-        >
-          <span
-            className="line1"
-            style={{
-              backgroundColor: theme === "light-theme" ? "black" : "white",
-            }}
-          ></span>
-          <span
-            className="line2"
-            style={{
-              backgroundColor: theme === "light-theme" ? "black" : "white",
-            }}
-          ></span>
-          <span
-            className="line3"
-            style={{
-              backgroundColor: theme === "light-theme" ? "black" : "white",
-            }}
-          ></span>
         </div>
+        
 
         <MainContentStyled>
           <div className="lines">

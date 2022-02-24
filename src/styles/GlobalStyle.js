@@ -130,47 +130,24 @@ span{
   }
 
   .ham-burger-menu{
-        position: absolute;
-        z-index: 15;
-        width: 34px;
-        height: 25px;
-        display: none;
-        
-        cursor: pointer;
-      
-      
-        span {
-          width: 100%;
-          height: 3px;
-          border-radius: 4px;
-          background-color: #fff;
-        }
-  }
-  
-
-  .nav-toggle{
-      transform: translateX(0);
-
-  }
-  @media screen and (max-width: 1200px){
-      .ham-burger-menu{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          left: 93%;
-          top: 3.5%;
-          position: fixed;
+      position: absolute;
+      right: 5%;
+      top: 3%; 
+      display: none;
+      z-index: 15;
+      svg{
+          font-size: 3rem;
       }
-    .ham-burger-menu span{
+    }
+    .nav-toggle{
+        transform: translateX(0);
+        z-index: 20;
+    }
+  @media screen and (max-width:1200px){
+    .ham-burger-menu{
         display: block;
     }
   }
-  @media screen and (max-width: 490px){
-      .ham-burger-menu{
-          left: 90%;
-      }
-  }
-
   @media screen and (max-width: 348px){
     .ham-burger-menu{
         left: 90%;
