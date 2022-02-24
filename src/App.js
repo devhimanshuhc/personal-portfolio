@@ -66,6 +66,7 @@ function App() {
           <MenuIcon onClick={() => setNavToggle(!navToggle)} />
         </div> */}
         <div
+        typeof="button"
           className={"ham-burger-menu"}
           onClick={() => {
             setNavToggle(!navToggle);
