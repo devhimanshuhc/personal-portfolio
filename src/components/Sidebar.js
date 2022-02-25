@@ -23,6 +23,6 @@ const SidebarStyled = styled.div`
     transform: translateX(-100%);
   }
   @media screen and (max-width: 347px) {
-    height: 100;
+    height: 100%;
   }
 `;
