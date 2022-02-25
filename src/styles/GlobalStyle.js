@@ -140,18 +140,13 @@ span{
       }
     }
     .nav-toggle{
-        transform: translateX(0);
-        z-index: 20;
+        transform: translateX(0) !important;
+        z-index: 20  !important;
     }
   @media screen and (max-width:1200px){
     .ham-burger-menu{
         display: block;
-        
-        .nav-toggle{
-            transform: translateX(100%s);
-        
-        z-index: 20;
-    }
+      
 
     }
 
@@ -162,10 +157,7 @@ span{
 
         left: 90%;
        position: fixed;
-       .nav-toggle{
-        transform: translateX(100%);
-        z-index: 20;
-    }
+       
     }
   }
 
