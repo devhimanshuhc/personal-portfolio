@@ -146,12 +146,25 @@ span{
   @media screen and (max-width:1200px){
     .ham-burger-menu{
         display: block;
+        
+        .nav-toggle{
+        transform: translateX(100%);
+        z-index: 20;
     }
+
+    }
+
   }
   @media screen and (max-width: 348px){
     .ham-burger-menu{
+        transform: translateX(0);
+
         left: 90%;
        position: fixed;
+       .nav-toggle{
+        transform: translateX(100%);
+        z-index: 20;
+    }
     }
   }
 
