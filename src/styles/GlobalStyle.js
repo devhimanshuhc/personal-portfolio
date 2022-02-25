@@ -140,7 +140,7 @@ span{
       }
     }
     .nav-toggle{
-        
+        transform: translateX(0);
         z-index: 20;
     }
   @media screen and (max-width:1200px){
@@ -148,6 +148,7 @@ span{
         display: block;
         
         .nav-toggle{
+            transform: translateX(100%s);
         
         z-index: 20;
     }
