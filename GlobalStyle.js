@@ -1,5 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 /* :root{
@@ -161,9 +160,18 @@ h6{
     }
 
     .nav-toggle{
-        transform: translateX(0);
-        z-index: 20;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: var(--background-light-color-2);
+        width: 6.5rem;
+        height: 2.5rem;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        transform: translateY(-100%) !important;
     }
+  
   @media screen and (max-width:1200px){
     .ham-burger-menu{
         display: block;
