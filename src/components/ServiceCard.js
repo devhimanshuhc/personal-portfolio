@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ServiceCard({ image, title, paragraph }) {
+export default function ServiceCard({ image, title, paragraph }, props) {
   return (
     <ServiceCardStyled>
       <div className="container">
         <img src={image} alt="" />
-        <h4>{title}</h4>
+        <h4 style={{ color: props.theme === "light-theme" ? "white" : "white" }}>
+          {title}
+        </h4>
         <p>{paragraph}</p>
       </div>
     </ServiceCardStyled>
