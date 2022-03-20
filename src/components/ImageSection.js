@@ -24,7 +24,7 @@ export default function ImageSection() {
             <p>Service</p>
           </div>
           <div className="info">
-            <p>: Himanshu Chauhan</p>
+            <p>: Himanshu</p>
             <p>: India</p>
             <p>: Web Developer</p>
           </div>
@@ -42,7 +42,6 @@ const ImageSectionStyled = styled.div`
   @media screen and (max-width: 1000px) {
     flex-direction: column;
   }
- 
 
   .right-content {
     h4 {
