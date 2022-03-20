@@ -100,13 +100,15 @@ const ContactPageStyled = styled.section`
       }
     }
     .form {
-      width: 100%;
+      max-width: 100%;
       @media screen and (max-width: 502px) {
         width: 100%;
       }
-      @media screen and (max-width: 347px) {
-        width: 100%;
+     
+      @media screen and (max-width: 445px) {
+        max-width: 85%;
       }
+     
 
       .form-field {
         margin-top: 2rem;
