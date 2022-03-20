@@ -15,12 +15,12 @@ export default function Menu({ menuItem }) {
               </div>
               <ul>
                 <li className="list list1">
-                  <a href={item.link1}>
+                  <a href={item.link1} className="list1">
                     <GitHubIcon />
                   </a>
                 </li>
                 <li className="list list2">
-                  <a href={item.link2}>
+                  <a href={item.link2} className="list2">
                     <LanguageIcon />
                   </a>
                 </li>
@@ -36,7 +36,7 @@ export default function Menu({ menuItem }) {
 }
 
 const MenuStyled = styled.div`
-margin-top: 2rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -75,7 +75,8 @@ margin-top: 2rem;
         svg {
           font-size: 2.2rem;
         }
-      }
+
+       
 
       .list1:hover {
         color: #6e5494;
@@ -102,6 +103,7 @@ margin-top: 2rem;
       .portfolio-image:hover {
         transition: all 0.4s ease-in-out;
         transform: scale(1.07);
+      }
       }
     }
   }
