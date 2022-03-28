@@ -3,7 +3,7 @@ import styled from "styled-components";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { TabTitle } from "../utils/GeneralFunctions";
+import { TabTitle } from "../utils/GeneralFunctions"; 
 
 export default function HomePage() {
   
