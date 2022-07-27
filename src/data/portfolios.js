@@ -1,6 +1,7 @@
 import img3 from "../img/portImages/amazon.png";
 import img2 from "../img/portImages/resp.png";
 import img1 from "../img/portImages/trvlr.png";
+import img4 from "../img/portImages/editor.jpg";
 
 const portfolios = [
   {
@@ -29,6 +30,15 @@ const portfolios = [
     link2: "https://responsiveweb.vercel.app/",
     title: "Responsive website",
     text: "This is a responsive site creted HTML, CSS and Javascript",
+  },
+  {
+    id: 4,
+    category: "Javascript",
+    image: img4,
+    link1: "https://github.com/devhimanshuhc/image-editor",
+    link2: "https://editor-image.vercel.app/",
+    title: "Responsive website",
+    text: "Here you can edit and save your image",
   },
 ];
 

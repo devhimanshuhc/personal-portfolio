@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import PrimaryButton from "../components/PrimaryButton";
 import Title from "../components/Title";
@@ -9,12 +9,15 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactItems from "../components/ContactItems";
 import { TabTitle } from "../utils/GeneralFunctions";
 
-
 export default function ContactPage(props) {
   TabTitle("Contact-Himanshu Chauhan");
   const call = <CallIcon />;
   const email = <EmailIcon />;
   const location = <LocationOnIcon />;
+
+
+  
+
   return (
     <div>
       <MainLayout>
@@ -25,34 +28,46 @@ export default function ContactPage(props) {
               <div className="contact-title">
                 <h4>Get In Touch</h4>
               </div>
-              <form className="form" >
-                <div className="form-field">
-                  <label htmlFor="name">Enter Your Name*</label>
-                  <input id="name" type="text" />
-                </div>
-                <div className="form-field">
-                  <label htmlFor="email">Enter Your E-mail*</label>
-                  <input id="email" type="email" />
-                </div>
-                <div className="form-field">
-                  <label htmlFor="subject">Enter Your Subject*</label>
-                  <input id="subject" type="text" />
-                </div>
-                <div className="form-field">
-                  <label htmlFor="">Enter Your Message*</label>
-                  <textarea
-                    name="textarea"
-                    id="textarea"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </div>
-                <div className="form-field f-button">
-                  <PrimaryButton title={"Send Email"} />
-                </div>
-              </form>
+             
+                <form className="form" >
+                  <div className="form-field">
+                    <label htmlFor="name">Enter Your Name*</label>
+                    <input
+                      id="name"
+                      type="text"
+                    
+                    />
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="email">Enter Your E-mail*</label>
+                    <input id="email" type="email" />
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="subject">Enter Your Subject*</label>
+                    <input id="subject" type="text" />
+                  </div>
+                  <div className="form-field">
+                    <label htmlFor="">Enter Your Message*</label>
+                    <textarea
+                      name="textarea"
+                      id="textarea"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                  <div
+                    className="form-field f-button"
+                    type="submit"
+                  >
+                    <PrimaryButton title={"Send Email"} />
+                  </div>
+                </form>
+             
             </div>
-            <div className="right-content" style={{color: props.theme === "light-theme" ? "" : "#a3a3a3"}}>
+            <div
+              className="right-content"
+              style={{ color: props.theme === "light-theme" ? "" : "#a3a3a3" }}
+            >
               <ContactItems
                 title={"Phone"}
                 icon={call}
@@ -87,7 +102,7 @@ const ContactPageStyled = styled.section`
     .right-content {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      
+
       @media screen and (max-width: 502px) {
         width: 70%;
       }
@@ -104,11 +119,10 @@ const ContactPageStyled = styled.section`
       @media screen and (max-width: 502px) {
         width: 100%;
       }
-     
+
       @media screen and (max-width: 445px) {
         max-width: 85%;
       }
-     
 
       .form-field {
         margin-top: 2rem;

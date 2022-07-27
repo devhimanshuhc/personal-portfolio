@@ -6,16 +6,18 @@ import AboutPage from "./Pages/AboutPage";
 import PortfoliosPage from "./Pages/PortfoliosPage";
 import ContactPage from "./Pages/ContactPage";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import { Routes, Route } from "react-router-dom";
 import { Switch } from "@mui/material";
 import { useState } from "react";
 import { useEffect } from "react";
 
+
 function App() {
   const [theme, setTheme] = useState("dark-theme");
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
+  
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -65,7 +67,6 @@ function App() {
         <div className="ham-burger-menu">
           <MenuIcon onClick={() => setNavToggle(!navToggle)} />
         </div>
-        
 
         <MainContentStyled>
           <div className="lines">
