@@ -24,46 +24,7 @@ export default function ContactPage(props) {
         <Title title={"Contact"} span={"Contact"} />
         <ContactPageStyled>
           <InnerLayout className={"contact-section"}>
-            <div className="left-content">
-              <div className="contact-title">
-                <h4>Get In Touch</h4>
-              </div>
-             
-                <form className="form" >
-                  <div className="form-field">
-                    <label htmlFor="name">Enter Your Name*</label>
-                    <input
-                      id="name"
-                      type="text"
-                    
-                    />
-                  </div>
-                  <div className="form-field">
-                    <label htmlFor="email">Enter Your E-mail*</label>
-                    <input id="email" type="email" />
-                  </div>
-                  <div className="form-field">
-                    <label htmlFor="subject">Enter Your Subject*</label>
-                    <input id="subject" type="text" />
-                  </div>
-                  <div className="form-field">
-                    <label htmlFor="">Enter Your Message*</label>
-                    <textarea
-                      name="textarea"
-                      id="textarea"
-                      cols="30"
-                      rows="10"
-                    ></textarea>
-                  </div>
-                  <div
-                    className="form-field f-button"
-                    type="submit"
-                  >
-                    <PrimaryButton title={"Send Email"} />
-                  </div>
-                </form>
-             
-            </div>
+            
             <div
               className="right-content"
               style={{ color: props.theme === "light-theme" ? "" : "#a3a3a3" }}
